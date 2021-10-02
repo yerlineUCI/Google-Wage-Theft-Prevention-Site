@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Financial Log</title>
+      <link href="https://fonts.googleapis.com/css?family=Arapey|Glegoo|Inconsolata|Istok+Web|Sorts+Mill+Goudy" rel="stylesheet">
+      <link rel= "stylesheet" href="/resources/log.css"></link>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    </head>
+  <body>
+
+    <div id= "header">
+      <div class="topnav">
+        <a href="/">Home</a>
+        <a href="finlog">Financial Calculator</a>
+        <a class="active">Finance Log</a>
+        <a {{signout}} </a>
+      </div>
+
+    <div id = title>
+      <p></p>
+      <h1>Finance History</h1>
+      <p></p>
+    </div>
+
+    <div id = "body">
+      <div id= "your_history">
+        <h1> Your Daily Logs <h1>
+          {%for stub in stubs%}
+          <br />
+            <p>
+              {%if stub.clock_in_hour%}
+                Wage Log<br />
+                Time in: {{stub.clock_in_hour}}:{{stub.clock_in_min}} {{stub.time_of_day_in}} <br />
+                Time out: {{stub.clock_out_hour}}:{{stub.clock_out_min}} {{stub.time_of_day_out}} <br />
+                Break: {{stub.break_time_length}} minutes <br />
+                Date: {{stub.date}} <br />
+              {%else%}
+                Paycheck<br />
+                Pay: {{stub.pay_check}} <br />
+                End Date: {{stub.end_date}} <br />
+                Start Date: {{stub.start_date}} <br />
+              {%endif%}
+            </p>
+          {%endfor%}
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="preFooter">
+      <div class="footer-social-icons">
+        <br>
+          <ul class="social-icons">
+            <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+            <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+    </div>
+    <div class="foot">
+      <footer>
+        <br>
+        <br>
+         © Copyright Under Construction
+         <br>
+         <br>
+         Project for Google CSSI
+
+
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<html>
+
+<head>
+  <title> Financial Calculator </title>
+  <link href="https://fonts.googleapis.com/css?family=Arapey|Glegoo|Inconsolata|Istok+Web|Sorts+Mill+Goudy" rel="stylesheet">
+  <link rel= "stylesheet" href="/resources/financial_log_style.css"></link>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src ='/resources/financial_log_js.js'></script>
+</head>
+
+<body>
+  <!-- tab to redirect to different pages-->
+  <div id='body'>
+
+  <div id="header">
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a class="active">Financial Calculator</a>
+      <a href="logpage">Finance Log</a>
+      <a {{signout}} </a>
+    </div>
+  </div>
+
+  <div id = title>
+    <p></p>
+    <h1>Wage Calculator</h1>
+    <p></p>
+  </div>
+  <!--div to put all of wage calc -->
+  <div id="check_info">
+    <h1> Update Your Wages for Today! </h1>
+    <!--wage calc form to get users information and upload to datastorage-->
+    <div id="form">
+      <form method="post" action ="/finlog">
+        <!--asks for variables-->
+        <div id="time">
+          <div type="times">
+            <p>
+              Clock in Hour / Minute: &nbsp&nbsp<input type="number" name="time_in_hour"/>&nbsp&nbsp:&nbsp&nbsp<input type="number" name="time_in_min"/>&nbsp&nbsp&nbsp&nbsp
+
+              Time of Day: <input type = 'radio' name='time_of_day_in' value=am> AM
+                        <input type = 'radio' name='time_of_day_in' value=pm> PM <br><br>
+
+              Clock out Hour / Minute: <input type="number" name="time_out_hour"/>&nbsp:&nbsp&nbsp<input type="number" name="time_out_min"/>&nbsp&nbsp&nbsp
+              Time of Day: <input type = 'radio' name='time_of_day_out' value=am> AM
+                        <input type = 'radio' name='time_of_day_out' value=pm> PM <br><br>
+              Breaktime length in minutes (unpaid):<input type="number" name="break_time_length"/> <br><br>
+              Date: <input type="date" name="date"/>
+            </p>
+          </div>
+        </div>
+        <!--asks for status using radio button-->
+        <div id="status">
+           <h3>Choose one: </h3>
+           <input type="radio" name="marital_status" value="1"> Dual income or Single
+           <br>
+           <input type="radio" name="marital_status" value="2"> Married with one income
+           <br>
+           <input type="radio" name="marital_status" value="3"> Head of household
+           <p><input type="submit" value="Submit"></p>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <br/>
+    <!--div to put all of pay stub -->
+<div id="pay_checks">
+  <div id='small-paycheck-div'>
+    <h1> Paycheck</h1>
+  </div>
+      <!--pay stub form to ask for check-->
+    <div id ="form2">
+      <form method="post" action="/finlog-check">
+          <!--asks for check info -->
+        <div id="check">
+          <div type="checks">
+            <p>
+              Start Date: <input type="date" name="start_date"/>&nbsp&nbsp&nbsp
+              End Date: <input type="date" name="end_date"/> <br><br>
+              How much was your paycheck? <input type="number" name="pay_check"/>
+              <p><input type="submit" value="Submit"></p>
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<br>
+<div id="result">
+  <h1>Result:</h1>
+
+    {% if alert and alert == 2 %}
+      <p>
+        Oh no! We noticed something off with your check:<br>
+        Estimated Check: {{estimated_pay}}<br>
+        Actual Check: {{pay_check}}
+      </p>
+    {% elif alert and alert == 1 %}
+      <p>
+        Everything in order!:<br>
+        Estimated Check: {{estimated_pay}}<br>
+        Actual Check: {{pay_check}}
+      </p>
+    {% elif alert and alert == 0 %}
+      <p>
+        Oh no! You have to submit your daily wages for those dates first!
+      </p>
+    {%endif%}
+</div>
+<br>
+<br>
+<div id="preFooter">
+  <div class="footer-social-icons">
+    <br>
+      <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+      </ul>
+    </div>
+</div>
+<div class="foot">
+  <footer>
+    <br>
+    <br>
+     © Copyright Under Construction
+     <br>
+     <br>
+     Project for Google CSSI
+
+
+  </footer>
+</div>
+
+
+
+
+</div>
+</body>
+</html>

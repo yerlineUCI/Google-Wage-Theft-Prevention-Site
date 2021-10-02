@@ -1,0 +1,126 @@
+<html>
+<head>
+  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Arapey|Glegoo|Inconsolata|Istok+Web|Sorts+Mill+Goudy" rel="stylesheet">
+      <link rel="stylesheet" href="/resources/main.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="/resources/main.js"></script>
+    <title>
+        Under Construction: Wage Theft Prevension
+    </title>
+</head>
+
+  <body>
+
+
+
+      <div id='header'>
+        <div class="topnav">
+          <a class="active" href="#home">Home</a>
+          {% if finlogbutton and logpagebutton%}
+          <a {{finlogbutton}}></a>
+          <a {{logpagebutton}}></a>
+          {%endif%}
+          <a {{signout}}></a>
+      </div>
+    </div>
+    <br>
+    <div class="centering">
+      <div class="title">
+        <h1>Wage Theft</h1>
+        <div class="font">Log in to use our free financial calculator!</div>
+      </div>
+    </div>
+<br>
+<br>
+<br>
+
+    <section>
+        <div id= "slides">
+      <img class="mySlides" src="/resources/bill-603243_1920.jpg" style="width:100%">
+      <img class="mySlides" src="/resources/person-1245789_1920.jpg" style="width:100%">
+      <img class="mySlides" src="/resources/fences-2111886_1920.jpg" style="width:100%">
+        </div>
+    </section>
+
+    <script>
+    // Automatic Slideshow - change image every 3 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 5000);
+    }
+    </script>
+      <h1> Wage Theft: Why is it important? </h1>
+       <p>
+         <li>Despite being against the law, employees continue to suffer minimum wage, overtime, and meal break &nbsp<br> violations amidst many other forms.</li>
+<br>
+         <li>Underpaid minimum wage workers lose an average of $64 per week, losing about $3,300 per year.&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</li>
+<br>
+         <li>Wage theft is mostly common among young workers, women, immigrant workers, and minorities who<br> have trouble standing up for themselves.</li>
+           <br>
+       <h1> What are we doing about it? </h1>
+                <p>Our group, Under Construction, is in the process of creating a social
+                 to connect employees with legal options, resources,<br> and other workers who have experienced similar situations.
+                 We have also created a digital calculator to help keep track of<br> your daily income in order to compare your
+                 estimated total with your actual check. Our built in alerts will notify you if<br> there is any significant difference
+                 that may require you to talk to your boss/managers and any legal alternatives.</p>
+            </p>
+
+    <div id= "body_content">
+      <div class="cover1">
+        <img id="farmer" src="/resources/farmer.jpg">
+        <img id="woman" src="/resources/haiti.jpg">
+        <img id="man" src="/resources/construction.jpg">
+      </div>
+      <div class="newspaper">
+         EMMANUEL<br>
+         Worked for an agriculture packing industry for several weeks but was always promised a delayed check that never came. His manager and boss never returned his calls after he quit.<br>
+         DASIA<br>
+         Worked as a nurse assistant for 6 months until she was continously forced to work overtime without pay. Her job only hired part time and ignored any job done after the employees clock out for the day.<br>
+         CHRIS<br>
+         Worked for a construction company earning minimum wage without lunch breaks. He was too afraid to speak up since he was a young worker.
+      </div>
+      <br>
+      <br>
+      <div id="theButtonHolder">
+        <div class="empty"></div>
+        <button class="button">Read more worker stories!</button>
+        <div class="empty"></div>
+      </div>
+      <br>
+      <div id="preFooter">
+        <div class="footer-social-icons">
+          <br>
+            <ul class="social-icons">
+              <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+              <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+              <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+              <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+      </div>
+      <div class="foot">
+        <footer>
+          <br>
+          <br>
+           © Copyright Under Construction
+           <br>
+           <br>
+           Project for Google CSSI
+
+
+        </footer>
+      </div>
+  </body>
+</html>

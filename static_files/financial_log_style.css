@@ -1,0 +1,241 @@
+#header{
+  font-family: 'Glegoo', serif;
+}
+h1{
+  font-family: 'Glegoo', serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width:100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+#body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Glegoo', serif;
+}
+#title{
+  padding-top: 5%;
+  margin: auto;
+}
+p{
+  font-size: 24px;
+}
+#check_info{
+  border: 3px solid #4CAF50;
+  min-width: 60%;
+  width: 60% ;
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+  justify-content: center;
+  font-family: 'Sorts Mill Goudy', serif;
+
+}
+.time_in_hour{
+  width: 300px;
+  height: 30px;
+  font-size: 14pt;
+  border: 2px solid black;
+  margin: 3px 1px 3px 0px;
+}
+.time_in_min{
+  width: 150px;
+  height: 30px;
+  font-size: 14pt;
+  border: 2px solid black;
+  margin: 3px 0px 3px 1px;
+}
+.time_out_hour{
+  width: 300px;
+  height: 30px;
+  font-size: 14pt;
+  border: 2px solid black;
+  margin: 3px 1px 3px 0px;
+}
+.time_out_min{
+  width: 150px;
+  height: 30px;
+  font-size: 14pt;
+  border: 2px solid black;
+  margin: 3px 0px 3px 1px;
+}
+#status{
+  font-size: 22px;
+}
+#pay_checks{
+  border: 3px solid #4CAF50;
+  min-width: 60%;
+  width: 60% ;
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+#result{
+  border: 3px solid #4CAF50;
+  min-width: 60%;
+  width: 60% ;
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+body{
+  margin:0px;
+}
+.foot{
+  background-color: #191919;
+}
+footer{
+  text-align: center;
+  height: 150px;
+  width: 100%;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-size: 17px;
+  color: white;
+}
+#preFooter {
+  background-color: #4D4D4D;
+  text-align: center;
+  height: 90px;
+  width: 100%;
+  opacity: 0.95;
+  }
+.social-icons{
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+p > a:hover{
+  color: #d9d9d9;
+  text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin:  1% 0 1% 0;
+}
+._12 {
+  font-size: 1.2em;
+}
+._14 {
+  font-size: 1.4em;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+ul {
+  padding:0;
+  list-style: none;
+}
+.footer-social-icons {
+  width: 350px;
+  display:block;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+ul.social-icons {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+.fa-facebook-f:before, .fa-facebook:before {
+  content: "\f09a";
+  font-size: 23px;
+}
+.fa-facebook {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #4D4D4D;
+}
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+.fa-twitter:before {
+  content: "\f099";
+  font-size: 23px;
+}
+.fa-twitter {
+  padding:10px 12px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #4D4D4D;
+}
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+.fa-youtube:before {
+content: "\f167";
+font-size: 23px;
+}
+.fa-youtube {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #4D4D4D;
+}
+.fa-youtube:hover {
+  background-color: #e64a41;
+}
+.fa-google-plus:before {
+  content: "\f0d5";
+  font-size: 23px;
+}
+.fa-google-plus {
+  padding:10px 9px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #4D4D4D;
+}
+.fa-google-plus:hover {
+  background-color: #e25714;
+}
